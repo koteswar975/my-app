@@ -41,5 +41,16 @@
    		<maven.compiler.source>6</maven.compiler.source>
    		<maven.compiler.target>1.6</maven.compiler.target>
  	</properties>
+	<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://100.26.193.153:8081/repository/maven-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexusRepo</id>
+		    <url>http://100.26.193.153:8081/repository/maven-releases/</url>
+		</repository>
+  	</distributionManagement>
 	
 </project>
