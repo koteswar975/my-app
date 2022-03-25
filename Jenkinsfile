@@ -1,4 +1,5 @@
-node{
+node('test1_maven'){
+   
    stage('SCM Checkout'){
      git 'https://github.com/javahometech/my-app'
    }
