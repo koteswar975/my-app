@@ -8,8 +8,6 @@ node('test1_maven'){
       sh "mvn clean package"
    }
    stage('Email Notification'){
-      mail bcc: '', body: '''Hi Welcome to jenkins email alerts
-      Thanks
-      Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'koteswarreddy40@gmail.com'
+   emailext body: '$build', subject: 'Test build', to: 'koteswarreddy40@gmail.com'
    }
 }
